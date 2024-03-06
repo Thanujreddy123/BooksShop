@@ -1,0 +1,17 @@
+{{!THis will print receipt of the order}}
+<h3>Thank you for your order of the {{order.Title}}</h3>
+<img src="/images/{{order.image}}" style="width: 200px; height: 200px;">
+<table border = "1">
+    <tr>
+        <td>Quantity:</td>
+        <td>{{order.quantity}}</td>
+    </tr>    
+    <tr>
+        <td>Price:</td>
+        <td>{{order.price}}</td>
+    </tr>
+    <tr>
+        <td><b>Total Cost</b>:</td>
+        <td><b>${{order.total}}</b></td>
+    </tr>
+</table>
